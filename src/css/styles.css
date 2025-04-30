@@ -539,21 +539,27 @@ section {
 }
 
 /* === GAME-BEREICH === */
-
 #game-bereich {
     background-color: var(--dunkel-grau-2);
     color: var(--weiß);
-    padding: auto;
+    padding: 0;
+    margin: 0;
+    display: block; /* Block-Layout, kein extra Raum */
+    width: 100%;    /* Nimmt die gesamte Breite ein */
+    height: 100vh;  /* Nimmt die gesamte Höhe des Viewports ein */
 }
 
-#game-bereich video {
-    width: 35%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+/* iFrame direkt im Game-Bereich */
+#game-bereich iframe {
+    width: 100%;      /* Maximale Breite */
+    height: 100%;     /* Maximale Höhe */
+    margin: 0;        /* Kein Abstand */
+    padding: 0;       /* Kein Padding */
+    border: none;     /* Keine Randlinien */
+    display: block;   /* Verhindert horizontale Ränder */
     box-shadow: 0 0 20px 0 var(--blau);
     border-radius: 6px;
+    overflow: hidden; /* Verhindert Scrollbalken */
 }
 
 #game-container {
@@ -565,13 +571,6 @@ section {
     padding: 2rem 1rem;
 }
 
-#game-container iframe {
-    max-width: 100%;
-    width: 960px;
-    height: 600px;
-    box-shadow: 0 0 20px 0 var(--blau);
-    border-radius: 8px;
-}
 
 #game-container a {
     text-decoration: none;
