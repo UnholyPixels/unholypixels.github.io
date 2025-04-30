@@ -566,16 +566,6 @@ section {
     padding: 2rem 1rem;
 }
 
-#game-container iframe {
-    max-width: 100%;
-    box-shadow: 0 0 20px 0 var(--blau);
-    border-radius: 8px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
 #game-container a {
     text-decoration: none;
     color: var(--weiß);
