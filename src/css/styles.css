@@ -538,6 +538,81 @@ section {
     }
 }
 
+/* === GAME-BEREICH === */
+
+#game-bereich {
+    background-color: var(--dunkel-grau-2);
+    color: var(--weiß);
+    padding: auto;
+}
+
+#game-bereich video {
+    width: 35%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 0 0 20px 0 var(--blau);
+    border-radius: 6px;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;  /* zentriert horizontal */
+    align-items: center;      /* zentriert vertikal, falls Höhe gesetzt */
+    flex-direction: column;   /* sorgt für sauberes vertikales Stapeln */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#game-container iframe {
+    max-width: 100%;
+    width: 960px;
+    height: 600px;
+    box-shadow: 0 0 20px 0 var(--blau);
+    border-radius: 8px;
+}
+
+#game-container a {
+    text-decoration: none;
+    color: var(--weiß);
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#game-container a:hover {
+    color: var(--blau);
+}
+
+
+@media (max-width: 1440px) {
+
+    #game-bereich iframe {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #game-bereich iframe {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #game-bereich iframe {
+        width: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #game-bereich iframe {
+        width: 100%;
+    }
+}
+
 /* === LEISTUNGEN-BEREICH === */
 
 #leistungen-bereich {
