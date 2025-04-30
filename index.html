@@ -23,93 +23,213 @@
   <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 </head>
 
+<!-- SMOOTH SCROLL -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+
 <body>
 
-  <!-- NAVIGATIONLEISTE-DESKTOP -->
-
-  <div id="mainContainer">
-    <nav id="header-nav">
+<!-- NAVIGATIONLEISTE-DESKTOP -->
+<div id="mainContainer">
+  <nav id="header-nav">
     <div class="container" id="desktop-nav">
       <div class="row">
         <div class="col-6">
-            <a href="./" class="logo-link">
-              <img src="src/img/logo.gif" alt="Logo" />
-            </a>
-            <ul><!--
-              <li><a href="angebot.html">Angebot</a></li>
-              <li><a href="portfolio.html">portfolio</a></li>
-              <li><a href="kontakt.html">contact</a></li>
-              -->
-              <li class="active"><a href="index.html">start</a></li>
-            </ul>
-        </div>
-    </div>
-  </div>
-
-      <!-- NAVIGATIONLEISTE-MOBIL -->
-
-      <div class="container" id="mobile-nav">
-        <div class="row">
-          <div class="col-6">
-            <a href="./" class="logo-link">
-              <img src="src/img/logo.gif" alt="Logo" />
-            </a>
-             <div class="clearfix" id="mobile-nav-dropdown">
-              <div id="mobile-nav-button"><span>&equiv;</span></div>
-
-              <div class="clearfix" id="mobile-nav-content">
-                <ul><!--
-                  <li><a href="angebot.html">Angebot</a></li>
-                  <li><a href="portfolio.html">portfolio</a></li>
-                  <li><a href="kontakt.html">contact</a></li>
-                  -->
-                  <li class="active"><a href="index.html">start</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <a href="#" class="logo-link">
+            <img src="src/img/home.png" alt="Logo" />
+          </a>
+          <a href="https://www.youtube.com/@Unholy-_-Pixels" class="youtube">
+            <img src="src/social/youtube.png" alt="youtube" />
+          </a>
+          <a href="https://www.patreon.com/c/Unholy_Pixels" class="patreon">
+            <img src="src/social/patreon.png" alt="patreon" />
+          </a>
+          <a href="https://x.com/unholypixels" class="x">
+            <img src="src/social/x.png" alt="x" />
+          </a>
+          <a href="https://unholy-pixels.itch.io/" class="itchio">
+            <img src="src/social/itchio.png" alt="itchio" />
+          </a>
+          <a href="discord.gg/GUdqGCEDjn" class="discord">
+            <img src="src/social/discord.png" alt="discord" />
+          </a>
+          <a href="https://inyaface.net/" class="inyaface">
+            <img src="src/social/inyaface.gif" alt="inyaface" />
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
       <!-- HEADER-BANNER -->
-
-  <header id="header-banner-start"></header>
+<!--
+  <header id="header-banner-start"></header> -->
 
     <!-- INTRO -->
 
     <div class="main-content-container">
       <div class="logo">
-        <img src="src/img/firmenlogo.png" alt="Logo" />
+        <img src="src/img/firmenlogo.png"  alt="Logo"/>
       </div>
-        <!--div class="video-main">
+        <div class="video-main">
           <video autoplay muted loop src="/src/video/reel.mp4" width="100%" height="100%"></video>
-        </div-->
+        </div>
     </div>
 
-    <!-- FOOTER -->
-    
-    <footer id="footer-start">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <span class="copyright">© by Oliver Meth (2025)</span>
-            <!--
-            <nav id="footer-start-nav">
-              <a href="impressum.html">Impressum</a>
-              <a href="agb.html">AGB</a>
-            </nav>
-            -->
+
+  <!-- SERVICE-BEREICH -->
+
+  <section id="service-bereich">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <header class="intro-container">
+            <h1>Unholy-_-Pixels – Irgendwas zwischen Chaos und Kaffee</h1>
+            <p><strong>DE:</strong><br>  
+              Willkommen im kreativen Paralleluniversum. Hier läuft selten was nach Plan – aber am Ende passt’s irgendwie.  
+              Kein 0815, stattdessen: schiefe Ideen, schräge Lösungen, ehrliches Handwerk.
+            </p>
+            <p>
+              <em>Clusterfuck sagt:</em> „Sieht vielleicht seltsam aus – ist aber mit Liebe kaputtgedacht.“
+            </p>
+            <hr>
+            <h1>Unholy-_-Pixels – Somewhere between chaos and caffeine.</h1>
+            <p><strong>EN:</strong><br>
+              Welcome to the creative side alley where nothing goes according to plan – and that’s the plan.  
+              No cookie-cutter junk, just crooked ideas, weird solutions, and honest chaos-crafted work.
+            </p>
+            <p>
+              <em>Clusterfuck says:</em> “Might look weird – but it's broken with love.”
+            </p>
+          </header>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- PORTFOLIO -->
+
+  <section class="video-bereich" id="video-bereich">
+    <header class="intro-container">
+      <h1>Video Stuff</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <header class="intro-container"></header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div id="videos-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gBzBu9uTvO4?si=fspKV1IVC8DZm6lg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/DwIfp3_HYr8?si=XHlQM37wWuwtPdYU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/hGtFw4e2W04?si=sKPOezr6x8S14TVs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
-    </footer>
-    <script defer>
-      document.addEventListener("touchstart", function () { }, true);
-    </script>
-    
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN-BEREICH -->
+
+  <section id="leistungen-bereich">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <header class="intro-container">
+            <h1>Unsere Leistungen</h1>
+            <p>
+              "Ein professioneller Film wird Dir dabei helfen, dich von der
+              Konkurrenz abzuheben!
+            <p>Egal ob Image-, Event-, Teaser & Trailer-, Unternehmensfilme & vieles mehr.
+            </p>
+            <li>
+              Hinzufügen von Musik, Text, Übergängen & Effekten, um dein
+              Video lebendiger zu machen.
+            </li>
+            <li>
+              Farbkorrektur und Farbanpassung, um sicherzustellen, dass dein
+              Video einheitlich aussieht.
+            </li>
+            <li>Alle Angebote inkl. Bearbeitung.✅</li>
+            </p>
+          </header>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <article class="leistungs-teaser-box">
+              <h2>Filme in dein Gesicht</h2>
+              <p>
+                Image- Unternehmens- Event- Werbefilme...<br>
+                Von der Idee zum Konzept.🎥
+              </p>
+              <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung1">Ansehen</a>
+            </article>
+          </div>
+            <div class="col-3">
+              <article class="leistungs-teaser-box">
+                <h2>Dein Projekt - Deine Vision!</h2>
+                <p>
+                  Individuelles Angebot? Schreib uns!<br>
+                  Wir vereinbaren einen Termin.
+                </p>
+                <a class="btn-typ-2 leistung-ansehen-btn" href="leistungen.html#leistung4">Ansehen</a>
+              </article>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+<!-- FOOTER -->
+  <footer id="footer-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <span class="copyright">© by Oliver Meth (2025)</span>
+          <nav id="footer-start-nav">
+            <a href="impressum.html">Impressum</a>
+            <a href="agb.html">AGB</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script defer>
+    document.addEventListener("touchstart", function () { }, true);
+  </script>
+
 </body>
-
-
 
 </html>
